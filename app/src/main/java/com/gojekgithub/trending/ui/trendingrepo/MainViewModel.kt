@@ -44,7 +44,7 @@ class MainViewModel(
         viewModelScope.launch {
             mainRepository.getRepositories(forcedRemote).onStart {
                 _gitRepos.postValue(Resource.loading(null))
-            }.catch { e -> _gitRepos.postValue(Resource.error(e.toString(), null)) }
+            }.catch { e -> _gitRepos.postValue(Resource.error(e.toString(), emptyList())) }
                 .collect {
                 when (it) {
                     is NetworkResponse.Success -> _gitRepos.postValue(Resource.success(it.data))
