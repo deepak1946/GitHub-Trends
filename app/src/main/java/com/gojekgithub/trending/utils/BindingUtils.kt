@@ -18,8 +18,12 @@ object BindingUtils {
 
     @BindingAdapter("app:trendingItems", "app:lifecycleOwner")
     @JvmStatic
-    fun setTrendingAdapter(view: RecyclerView, items: List<GitRepositoryModel>?, lifecycleOwner: LifecycleOwner) {
-        if(items == null) {
+    fun setTrendingAdapter(
+        view: RecyclerView,
+        items: List<GitRepositoryModel>?,
+        lifecycleOwner: LifecycleOwner
+    ) {
+        if (items == null) {
             return
         }
         var adapter: TrendingRecyclerViewAdapter? = view.adapter as TrendingRecyclerViewAdapter?
@@ -45,12 +49,15 @@ object BindingUtils {
     @JvmStatic
     fun loadImage(shimmerFrameLayout: ShimmerFrameLayout, @Status status: Int?) {
         shimmerFrameLayout.apply {
-            if(status == Status.Loading) {
-                visibility = VISIBLE
-                startShimmer()
-            } else {
-                stopShimmer()
-                visibility = GONE
+            when (status) {
+                Status.Loading -> {
+                    visibility = VISIBLE
+                    startShimmer()
+                }
+                else -> {
+                    stopShimmer()
+                    visibility = GONE
+                }
             }
         }
     }
