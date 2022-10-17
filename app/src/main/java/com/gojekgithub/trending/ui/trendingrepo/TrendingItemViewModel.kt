@@ -21,7 +21,7 @@ class TrendingItemViewModel constructor(
 
     init {
         trendingRepoData.also { trendingRepoData ->
-            author.value = trendingRepoData.full_name
+            author.value = trendingRepoData.fullName
             title.value = trendingRepoData.name
             avatar.value = trendingRepoData.owner?.avatar
             description.value = "${trendingRepoData.description}(${trendingRepoData.url})"
