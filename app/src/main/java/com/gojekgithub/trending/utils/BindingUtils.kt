@@ -19,13 +19,16 @@ object BindingUtils {
     @BindingAdapter("app:trendingItems", "app:lifecycleOwner")
     @JvmStatic
     fun setTrendingAdapter(view: RecyclerView, items: List<GitRepositoryModel>?, lifecycleOwner: LifecycleOwner) {
+        if(items == null) {
+            return
+        }
         var adapter: TrendingRecyclerViewAdapter? = view.adapter as TrendingRecyclerViewAdapter?
         view.layoutManager = LinearLayoutManager(view.context)
         if (null == adapter) {
-            adapter = TrendingRecyclerViewAdapter(items.orEmpty(), lifecycleOwner)
+            adapter = TrendingRecyclerViewAdapter(items, lifecycleOwner)
             view.adapter = adapter
         } else {
-            adapter.setContentItemList(items.orEmpty())
+            adapter.setContentItemList(items)
             adapter.notifyDataSetChanged()
         }
     }
