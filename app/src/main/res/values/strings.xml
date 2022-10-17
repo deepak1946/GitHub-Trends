@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Trending</string>
+    <string name="font_fontFamily_medium">sans-serif-medium</string>
+    <string name="sort_stars">Sort by stars</string>
+    <string name="sort_name">Sort by name</string>
+    <string name="font_fontFamily_regular">sans-serif</string>
+    <string name="retry">RETRY</string>
+    <string name="error">Something went wrong …</string>
+    <string name="error_description">An alien is probably blocking your signal</string>
+</resources>

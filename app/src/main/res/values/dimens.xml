@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Margin/Padding-->
+    <dimen name="trending_ui_spacing_no_space">0dp</dimen>
+    <dimen name="trending_ui_spacing_xxsm">1dp</dimen>
+    <dimen name="trending_ui_spacing_xsmm">2dp</dimen>
+    <dimen name="trending_ui_spacing_xsm">4dp</dimen>
+    <dimen name="trending_ui_spacing_xxmd">5dp</dimen>
+    <dimen name="trending_ui_spacing_xxmmd">6dp</dimen>
+    <dimen name="trending_ui_spacing_sm">8dp</dimen>
+    <dimen name="trending_ui_spacing_s">10dp</dimen>
+    <dimen name="trending_ui_spacing_xs">12dp</dimen>
+    <dimen name="trending_ui_spacing_md">16dp</dimen>
+    <dimen name="trending_ui_spacing_mmd">20dp</dimen>
+    <dimen name="trending_ui_spacing_xmd">24dp</dimen>
+    <dimen name="trending_ui_spacing_lg">32dp</dimen>
+    <dimen name="trending_ui_spacing_xlg">56dp</dimen>
+
+    <dimen name ="trending_ui_spacing_100dp">100dp</dimen>
+    <dimen name ="trending_ui_spacing_21dp">21dp</dimen>
+
+    <dimen name="trending_dimen_32dp">32dp</dimen>
+    <dimen name="trending_dimen_21dp">21dp</dimen>
+    <dimen name="trending_dimen_16dp">16dp</dimen>
+
+    <!--Text Size-->
+    <dimen name="trending_ui_text_smaller">12sp</dimen>
+    <dimen name="trending_ui_text_small">14sp</dimen>
+    <dimen name="trending_ui_text_medium">16sp</dimen>
+    <dimen name="trending_ui_text_large">22sp</dimen>
+
+    <!--Text Size for Network error -->
+    <dimen name="trending_ui_text_title">18sp</dimen>
+    <dimen name="trending_ui_text_description">15sp</dimen>
+</resources>
