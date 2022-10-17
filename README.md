@@ -1,4 +1,3 @@
-# Gojek Android Home Assignment
 ## Trending list of github repo's, written and implemented in Kotlin. Dagger, MVVM, LiveData, Retrofit, Data Binding, Coroutines, Flows, Espresso Ui and unit test cases.
 
 ## Functional Requirements
@@ -19,5 +18,3 @@ should be stored locally and served from cache until the cache expires.
 to refresh the data from remote and purge the cache only after successful data fetch.
 ● The app should give a pull-to-refresh option to the user to force fetch data from remote.
 
-## Documentation By
-Deepak Singh
